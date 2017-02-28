@@ -1,7 +1,9 @@
 package com.org.bitwise;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
@@ -11,7 +13,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		
-		Set<Employee> s=new TreeSet<>();
+		/*Set<Employee> s=new TreeSet<>();
 		Employee e1=new Employee("Vivek",25);
 		Employee e2=new Employee("Varun",21);
 		Employee e3=new Employee("Pranav",32);
@@ -26,7 +28,16 @@ public class Test {
 		m.put(e3,e3.getEmpId());
 		m.put(e2,e2.getEmpId());
 		m.put(null, 2);
-		System.out.println(m);
+		System.out.println(m);*/
+		
+		List al=new ArrayList();
+		al.add(2);
+		al.add(3);
+		al.add(5);
+		al.remove(2);
+		for(int i=0;i<al.size();i++)
+			System.out.println(al.get(i));
+		
 	}
 
 }
