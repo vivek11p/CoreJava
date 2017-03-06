@@ -1,4 +1,4 @@
-package com.org.bitwise;
+package com.org.vivek;
 
 public class BubbleSort {
 
