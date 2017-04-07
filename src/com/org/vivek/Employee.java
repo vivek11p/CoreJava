@@ -2,7 +2,7 @@ package com.org.vivek;
 
 import java.util.Comparator;
 
-public class Employee implements Comparable{
+public class Employee{
 
 	private String name;
 	private int empId;
@@ -26,27 +26,27 @@ public class Employee implements Comparable{
 		this.empId = empId;
 	}
 
-	@Override
+	/*@Override
 	public int compareTo(Object arg0) {
 		Employee e0=(Employee)arg0;
 		
-		/*if(this.name.compareTo(e0.name)>=0)
+		if(this.name.compareTo(e0.name)>=0)
 			return 1;
 		else 
-			return 0;*/
+			return 0;
 		//return this.empId-e0.empId;
-		/*if(this.name.compareTo(e0.name)!=0)
+		if(this.name.compareTo(e0.name)!=0)
 			return this.name.compareTo(e0.name);
 		if(this.empId-e0.empId!=0)
 			return e0.empId-this.empId;
-		return 0;*/
+		return 0;
 		if(this==null || e0==null)
 			return 0;
 		return this.getName().compareTo(e0.getName());
-	}
+	}*/
 	@Override
 	public String toString()
 	{
-		return this.name+this.empId;
+		return this.name+"_"+this.empId;
 	}
 }
